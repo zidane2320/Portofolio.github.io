@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><!-- Menyertakan file CSS dari Bootstrap 5 untuk styling dan layout yang responsif.-->
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary"><!--Membuat navbar dengan kelas Bootstrap untuk responsivitas dan tampilan latar belakang sekunder.-->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Portofolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><!--Tombol untuk menampilkan atau menyembunyikan menu pada perangkat kecil (mobile).-->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="themeSwitch"><!--Menggunakan kelas Bootstrap untuk membuat switch toggle (untuk mengubah tema gelap atau terang).-->
+              <label class="form-check-label" for="themeSwitch">Light Mode</label><!--ID untuk checkbox yang digunakan untuk mengubah mode tema.-->
+            </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+  <!-- Section Tentang Diri -->
+  <section id="about" class="py-5"><!--Menetapkan ID untuk section ini sehingga dapat diakses oleh navigasi. -->
+    <div class="container">
+      <h2 class="text-center">About</h2><!-- Menyusun teks ke tengah.-->
+      <img src="asset/WhatsApp Image 2024-12-05 at 16.16.33.jpeg" 
+         alt="Foto Rahmatullah Zidane Al Hakim" 
+         class="d-block mx-auto rounded-circle mb-3 " 
+         style="width: 150px; height: 150px; object-fit: cover;"><!-- : Menampilkan gambar profil dalam bentuk lingkaran, diposisikan di tengah.Menetapkan ukuran gambar dan memastikan gambar terpotong dengan rapih sesuai bentuk lingkaran.-->
+      <p class="text-center mt-3">Halo, saya Rahmatullah Zidane Al Hakim.</p>
+      <p class="text-center">Saya adalah mahasiswa aktif program studi S1 Informatika fakultas Telematika Energi Institut Teknologi PLN. Saya suka mengexplore tentang teknologi terutama dalam bidang web developer.</p>
+    </div>
+  </section>
+  <!--Project -->
+  <section id="project" class="py-5 bg-light"><!-- Menetapkan ID untuk section proyek.-->
+    <div class="container">
+      <h2 class="text-center">Project</h2>
+      <div class="row mt-4"><!--Menggunakan grid sistem Bootstrap untuk menata elemen secara responsif. mt-4 memberi margin atas pada row.-->
+        <div class="col-md-4"><!-- Membagi kolom menjadi tiga bagian yang setara pada perangkat medium (desktop).-->
+          <div class="card h-100"><!-- card: Bootstrap card untuk menampilkan proyek dalam tampilan yang terstruktur Menjaga tinggi kartu agar sama.-->
+            <img src="asset/game.jpg" class="card-img-top" alt="Project 1"  height="300px">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Proyek pertama saya membuat sebuah game dengan berbasis unity.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"><!-- Membagi kolom menjadi tiga bagian yang setara pada perangkat medium (desktop).-->
+          <div class="card h-100"><!-- card: Bootstrap card untuk menampilkan proyek dalam tampilan yang terstruktur Menjaga tinggi kartu agar sama.-->
+            <img src="asset/project atm.jpg" class="card-img-top" alt="Project 2" height="300px">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Proyek kedua saya membuat sebuah program penarikan uang ATM dengan menggunakan bahasa C++.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"><!-- Membagi kolom menjadi tiga bagian yang setara pada perangkat medium (desktop).-->
+          <div class="card h-100"><!-- card: Bootstrap card untuk menampilkan proyek dalam tampilan yang terstruktur Menjaga tinggi kartu agar sama.-->
+            <img src="asset//project oop.jpg" class="card-img-top" alt="Project" height="300px">
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">Proyek ketiga saya membuat program data mahasiswa dan pegawai menggunakan object oriented programming.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulir Kontak -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Contact</h2>
+      <form class="mt-4">
+        <div class="mb-3"><!-- Memberi margin bawah pada setiap elemen input.-->
+          <label for="name" class="form-label">Nama</label>
+          <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda"><!-- Kelas Bootstrap untuk input form agar tampil responsif dan rapi.-->
+        </div>
+        <div class="mb-3"><!-- Memberi margin bawah pada setiap elemen input.-->
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda">
+        </div>
+        <div class="mb-3"><!-- Memberi margin bawah pada setiap elemen input.-->
+          <label for="message" class="form-label">Pesan</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Tulis pesan Anda"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Kirim</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><!-- Mengaktifkan fungsi-fungsi interaktif Bootstrap seperti menu navbar yang responsif.-->
+  <!-- Bagian Java Script  -->
+  <script>
+    // Theme toggle logic
+    const themeSwitch = document.getElementById('themeSwitch');
+    const body = document.body;
+    const themeLabel = document.querySelector('label[for="themeSwitch"]');
+
+    // Check saved theme preference
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark') {
+      body.setAttribute('data-bs-theme', 'dark');
+      themeSwitch.checked = true;
+      themeLabel.textContent = 'Dark Mode'; // Ubah label saat tema gelap
+    }
+
+    // Add event listener for theme toggle
+    themeSwitch.addEventListener('change', () => {
+      if (themeSwitch.checked) {
+        body.setAttribute('data-bs-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        themeLabel.textContent = 'Dark Mode'; // Ubah label ke Light Mode
+      } else {
+        body.setAttribute('data-bs-theme', 'light');
+        localStorage.setItem('theme', 'light');
+        themeLabel.textContent = 'Light Mode'; // Ubah label ke Dark Mode
+      }
+    });
+  </script>
+</body>
+</html>
